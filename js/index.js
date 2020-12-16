@@ -1,6 +1,7 @@
 const icon = document.querySelector(".player_audio > span");
 const audio = document.querySelector("audio");
 let play_audio = true;
+let first_play = false;
 
 
 $(document).ready(function () {
@@ -70,6 +71,7 @@ $(window).scroll(function () {
 
 function setPlay() {
   audio.play().then(() => {
+    first_play = true;
     $('#audio_button').html('<img src="img/mute.png" height=20px></img>');
   }).catch(err => {
     $('#audio_button').html('<img src="img/unmute.png" height=20px></img>');
@@ -83,10 +85,11 @@ function setPause() {
 
 
 $('#audio_button').click(() => {
-  if (play_audio) {
+  if (play_audio && first_play) {
     play_audio = false
     setPause();
   } else {
+    console.log('play audio')
     play_audio = true;
     setPlay()
   }

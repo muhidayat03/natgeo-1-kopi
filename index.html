@@ -5,7 +5,7 @@
   <title>National Geographic Indonesia</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- css -->
   <link rel="stylesheet" href="css/styles.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
@@ -15,7 +15,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="js/lightslider.js"></script>
-  
+
 
   <!-- icon -->
   <link rel="apple-touch-icon"
@@ -32,8 +32,128 @@
     href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon.ico">
   <link rel="mask-icon"
     href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/safari-pinned-tab.ngsversion.20201008121756.svg"
-    color="#ffcc00"> 
+    color="#ffcc00">
 
+  <style>
+    .cover__img:after {
+      content: "";
+      background: rgba(0, 0, 0, .5);
+      transition: all .2s ease .5s;
+    }
+
+    .cover__img,
+    .cover__img:after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #cover {
+      background-image: url("./img/biji1-min.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    @media (min-width: 1024px) {
+      .cover__title {
+        margin: 0 40vh 20px 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .cover__title {
+        font-size: 45px;
+        margin: 0 0 20px;
+      }
+    }
+
+    .cover__title {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      margin: 0 0 20px;
+      font-family: BrandonTextBold, sans-serif;
+    }
+
+
+    .section {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .cover__item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .cover__box {
+      position: absolute;
+      bottom: 20vh;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      padding: 0 20px;
+      transition: all .2s ease .55s;
+    }
+
+    .cover__info {
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: 1px solid #fff;
+      padding: 5px 15px;
+      margin: 0;
+      letter-spacing: 1.5px;
+    }
+
+    .cover__title {
+      margin: 0 40vh 20px 0;
+    }
+
+    .cover__title {
+      margin: 0 40vh 20px 0;
+    }
+
+    .cover__title {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      margin: 0 0 20px;
+      font-family: BrandonTextBold, sans-serif;
+    }
+
+    .cover__info {
+      display: inline-block;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: 1px solid #fff;
+      padding: 5px 15px;
+      margin: 0;
+      letter-spacing: 1.5px;
+    }
+
+    @media (min-width: 768px) {
+      .cover__title {
+        font-size: 45px;
+        margin: 0 0 20px;
+      }
+
+      .cover__info {
+        font-size: 18px;
+      }
+    }
+  </style>
 
 </head>
 
@@ -42,33 +162,35 @@
 
   <!-- Loading -->
   <div id="loading">
-    <div class="loading-bg"></div>  
+    <div class="loading-bg"></div>
     <div class="loading-item"></div>
   </div>
 
   <div style="overflow: auto;">
   </div>
 
-  <!-- cover -->
+  <!-- template ngi-jx -->
   <section id='cover'>
-    <header>
-      <div class="navbar">
-        <img class="logo-kiri" src="./img/logo_national_geographic.png" />
-        <img class="logo-kanan" src="./img/logo_pertamina_bg.png" />
+    <div class="section">
+      <div class="cover__item">
+        <!-- tambahan -->
+        <div
+          style="position: absolute; top: 0; left: 0; z-index: 5; width: 100%; display: flex; justify-content: space-between; align-items: center; position: absolute;">
+          <img class="logo-kiri" src="./img/logo_national_geographic.png" />
+          <img class="logo-kanan" src="./img/logo_pertamina_bg.png" />
+        </div>
+        <!-- tambahan -->
+        <div class="cover__img picturefill-background" id="cover">
+        </div>
+        <div class="cover__box">
+          <h2 class="cover__title">
+            Berdikari Dengan Kopi
+          </h2>
+          <a href="https://nationalgeographic.grid.id/jx/berdikari-kopi" class="cover__link">
+            <span class="cover__info">Lihat</span>
+          </a>
+        </div>
       </div>
-    </header>
-    <div class="flex-center fullpage content-1">
-      <div style="z-index: 100;padding: 20px;">
-        <h1 class="title" data-aos="fade-up"> Berdikari dengan Kopi</h1>
-        <p class="sub-title" data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 40px;">
-          Dari konservasi satwa sampai kemandirian warga yang mendunia
-        </p>
-
-        <button class="button-home" onclick="location.href='kopi.html';" data-aos="fade-left" data-aos-delay="600">
-          LIHAT</button>
-      </div>
-    </div>
-    <div class=" overlay-background">
     </div>
   </section>
 
