@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.48;
+}
+
+#loading {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 800;
+
+}
+
+.loading-bg {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black; 
+  opacity: 1;
+}
+
+.loading-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px;
+  border: 5px solid #ffd503;
+  background-color: transparent; 
+  animation: loading 1.2s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 100%;
+  /* margin: auto; */
+}
+
+.slideshow-container img {
+  display: block;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #bbb;
+  opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fullpage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-1 {
+  background: url("../img//biji1-min.jpg") center center no-repeat;
+  background-size: cover !important;
+}
+.content-2 {
+  background: url("../img/space-kopi-grey.jpg") center center no-repeat;
+  background-size: cover !important;
+}
+
+.overlay-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.logo-kanan {
+  height: 80px;
+}
+
+.logo-kiri {
+  height: 60px;
+  padding-left: 15px;
+}
+
+.title {
+  color: white;
+  font-size: 68px;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+
+.layer {
+  background-position: center bottom;
+
+  background-repeat: no-repeat;
+
+  background-size: 100% 600px;
+
+  width: 100%;
+
+  min-height: 600px;
+
+  height: auto;
+
+  position: fixed;
+}
+
+.layer-bg {
+  background: url("../img/space-kopi-grey.jpg") center center no-repeat;
+}
+
+.parallax {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  background-attachment: fixed;
+
+  background-position: center 0;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  height: 100%;
+  filter: blur(2px);
+}
+
+.content-container {
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: auto;
+}
+
+#sejarah > p {
+  line-height: 1.8;
+}
+
+.first {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.left-container {
+  padding: 60px;
+  color: white;
+}
+
+.side-container {
+  width: 50%;
+}
+
+.balok {
+  width: 80px;
+}
+
+.balok-item {
+  background-color: #fed602;
+  height: 150px;
+  width: 10px;
+  position: sticky;
+  top: 200px;
+  margin: 20px 0;
+}
+
+.parallax-image {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.caption-image {
+  padding: 40px;
+  text-align: center;
+  color: #fed602;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.article-image {
+  background-image: url("../img/biji2-min.jpg");
+  background-size: cover !important;
+  position: relative;
+  min-height: 600px;
+  background-color: black;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.4;
+  z-index: 10;
+  position: relative;
+}
+
+.hover:hover {
+  transform: scale(1.4);
+  transition: ease 0.2s;
+}
+
+.nav-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+}
+
+.nav-anchor {
+  text-decoration: none;
+}
+
+#dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  padding: 12px 16px 20px;
+  z-index: 1;
+  bottom: 48px;
+  right: -10px;
+}
+
+.menu-item {
+  background-color: black;
+  box-shadow: 4px 4px 18px 4px rgba(0, 0, 0, 0.4);
+
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid white;
+}
+
+.menu-item:last-child {
+  border-bottom: 2px solid white;
+}
+
+.button-home {
+  padding: 0.93em 2.6em;
+  background-color: transparent;
+  border-color: white;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+.button-home:hover {
+  background-color: white;
+  color: black;
+}
+.button-home:focus {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax-image {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 978px) {
+  .left-container {
+    padding: 60px 20px;
+  }
+  .side-container {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .balok {
+    width: 40px;
+  }
+  .balok-item {
+    width: 8px;
+  }
+}
+@media (max-width: 978px) {
+  .left-container {
+    padding: 60px 20px;
+  }
+  .side-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-kiri {
+    height: 60px;
+  }
+  .logo-kanan {
+    height: 80px;
+  }
+  .content-container {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-kiri {
+    height: 40px;
+  }
+  .logo-kanan {
+    height: 60px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 320px) {
+  .logo-kiri {
+    height: 32px;
+  }
+  .logo-kanan {
+    height: 52px;
+  }
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list:before {
+  content: "\e902";
+}
+.icon-down:before {
+  content: "\e900";
+}
+.icon-up:before {
+  content: "\e901";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-whatsapp:before {
+  content: "\f232";
+}

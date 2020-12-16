@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>National Geographic Indonesia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="js/lightslider.js"></script>
+  
+
+  <!-- icon -->
+  <link rel="apple-touch-icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/apple-touch-icon.ngsversion.20201008121756.png">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon.ngsversion.20201008121756.png">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon-32x32.ngsversion.20201008121756.png"
+    sizes="32x32">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon-16x16.ngsversion.20201008121756.png"
+    sizes="16x16">
+  <link rel="shortcut icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon.ico">
+  <link rel="mask-icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/safari-pinned-tab.ngsversion.20201008121756.svg"
+    color="#ffcc00"> 
+
+
+</head>
+
+<body>
+
+
+  <!-- Loading -->
+  <div id="loading">
+    <div class="loading-bg"></div>  
+    <div class="loading-item"></div>
+  </div>
+
+  <div style="overflow: auto;">
+  </div>
+
+  <!-- cover -->
+  <section id='cover'>
+    <header>
+      <div class="navbar">
+        <img class="logo-kiri" src="./img/logo_national_geographic.png" />
+        <img class="logo-kanan" src="./img/logo_pertamina_bg.png" />
+      </div>
+    </header>
+    <div class="flex-center fullpage content-1">
+      <div style="z-index: 100;padding: 20px;">
+        <h1 class="title" data-aos="fade-up"> Berdikari dengan Kopi</h1>
+        <p class="sub-title" data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 40px;">
+          Dari konservasi satwa sampai kemandirian warga yang mendunia
+        </p>
+
+        <button class="button-home" onclick="location.href='kopi.html';" data-aos="fade-left" data-aos-delay="600">
+          LIHAT</button>
+      </div>
+    </div>
+    <div class=" overlay-background">
+    </div>
+  </section>
+
+
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 2000 });
+    $(window).on('load', function () {
+      $('#loading').fadeOut("slow");
+    });
+  </script>
+
+</html>

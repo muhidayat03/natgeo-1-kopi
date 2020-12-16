@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Berdikari dengan Kopi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="js/lightslider.js"></script>
+  
+
+  <!-- icon -->
+  <link rel="apple-touch-icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/apple-touch-icon.ngsversion.20201008121756.png">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon.ngsversion.20201008121756.png">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon-32x32.ngsversion.20201008121756.png"
+    sizes="32x32">
+  <link rel="icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon-16x16.ngsversion.20201008121756.png"
+    sizes="16x16">
+  <link rel="shortcut icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/favicon.ico">
+  <link rel="mask-icon"
+    href="https://www.nationalgeographic.com/etc.clientlibs/ui/clientlibs/resources/platform/refresh/images/safari-pinned-tab.ngsversion.20201008121756.svg"
+    color="#ffcc00"> 
+
+</head>
+
+<body>
+
+  <div id="nav-button" style="position: fixed; bottom: 32px; right: 32px;z-index: 100;">
+    <div class="hover nav-button flex-center" id="dropdown" style="margin-bottom: 20px;">
+      <span style="color: white; font-weight: bold;" class="icon-list icon-class"></span>
+      <div class="dropdown-content">
+        <a href="#history" class="nav-anchor">
+          <div class="menu-item">
+            Sejarah Kopi
+          </div>
+        </a>
+        <a href="#owa" class="nav-anchor">
+          <div class="menu-item">
+            Owa Jawa
+          </div>
+        </a>
+        <a href="#panen" class="nav-anchor">
+          <div class="menu-item">
+            Panen Kopi Puntang
+          </div>
+        </a>
+        <a href="#produk" class="nav-anchor">
+          <div class="menu-item">
+            Produk Kopi Puntang
+          </div>
+        </a>
+        <a href="#bayar" class="nav-anchor">
+          <div class="menu-item">
+            Bayar Kopi Pakai Sampah
+          </div>
+        </a>
+        <a href="#mitra" class="nav-anchor">
+          <div class="menu-item">
+            Kemitraan Kopi untuk UMKM
+          </div>
+        </a>
+        <a href="#youtube" class="nav-anchor">
+          <div class="menu-item">
+            Video Kopi Aceh
+            Bawadi
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="hover nav-button flex-center player_audio" style="margin-bottom: 20px;" id="audio_button">
+      <img src="img/unmute.png" height=20px></img>
+    </div>
+
+    <a href="#cover" class="nav-anchor">
+      <div class="hover nav-button flex-center">
+        <span style="color: white; font-weight: bold;" class="icon-up icon-class"></span>
+      </div>
+    </a>
+
+    <audio id="player" autoplay loop>
+      <source src="./audio/nature.mp3" type="audio/mp3">
+    </audio>
+
+
+  </div>
+
+  <!-- Loading -->
+  <div id="loading">
+    <div class="loading-bg"></div>
+    <div class="loading-item"></div>
+  </div>
+
+  <!-- cover -->
+  <section id='cover'>
+    <header>
+      <div class="navbar">
+        <img class="logo-kiri" src="./img/logo_national_geographic.png" />
+        <img class="logo-kanan" src="./img/logo_pertamina_bg.png" />
+      </div>
+    </header>
+    <div class="flex-center fullpage content-1">
+      <div style="z-index: 100;padding: 20px;">
+        <h1 class="title" data-aos="fade-up"> Berdikari dengan Kopi</h1>
+        <p class="sub-title" data-aos="fade-up" data-aos-delay="400">
+          Dari konservasi satwa sampai kemandirian warga yang mendunia
+        </p>
+        <div style="width: 140px; height: 8px; background-color: #FED602; margin-top: 40px" data-aos="fade-left">
+        </div>
+      </div>
+    </div>
+    <div class="overlay-background"></div>
+  </section>
+
+  <!-- history -->
+  <section id='history'>
+    <div style="position: relative;">
+      <div class="flex-center fullpage" id="#sejarah">
+        <div class="parallax" data-image-src="./img/space-kopi-grey.jpg"
+          style="height:100%; min-height: 100vh;position: absolute;">
+        </div>
+        <div style="z-index: 10;">
+          <div class="content-container">
+            <p data-aos="fade-down" data-aos-offset="200">
+              <span class="first">S</span>ekitar 13 abad silam, di daratan Etiopia, hiduplah seorang penggembala
+              kambing
+              bernama
+              Kaldi.
+              Pada suatu hari, ia melihat kawanan ternaknya bertingkah aneh. Mereka seolah-olah sedang menari! Tidak
+              ada
+              yang bisa memastikan kebenaran cerita tersebut. Tetapi, kisah itulah yang sering disebut-sebut sebagai
+              awal
+              mula orang mengenal kopi.
+            </p>
+            <p data-aos="fade-down" data-aos-offset="200">
+              Belakangan, Kaldi mengetahui bahwa kambing-kambing itu memakan sejenis kacang merah. Ia lalu
+              menyimpulkan
+              bahwa kacang itulah penyebab kawanan ternaknya bertingkah aneh. Kaldi kemudian mengabarkan temuannya
+              kepada
+              seorang biksu yang membutuhkan sesuatu untuk tetap terjaga sepanjang malam ketika berdoa. Namun, dalam
+              cerita
+              yang lain, biksu tersebut menolak dan melemparkan kacang tersebut ke dalam api dan memunculkan aroma
+              yang
+              menyenangkan.
+            </p>
+            <div style="margin-top: 40px;" data-aos="flip-down">
+              <p style="font-weight: bold; font-size: 24px;">
+                Tidak ada yang bisa memastikan kebenaran cerita tersebut. Tetapi, kisah itulah yang sering
+                disebut-sebut
+                sebagai awal mula orang mengenal kopi.
+              </p>
+              <div style="width: 140px; height: 8px; background-color: #fed602; margin-top: 20px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- after history -->
+  <section>
+    <div class="fullpage flex-center">
+      <div class="content-container" style="display: flex;">
+        <div class="balok">
+          <div class='balok-item'></div>
+        </div>
+        <article style="flex: 1;">
+          <p data-aos="flip-up">
+            Lantaran rasa dan aromanya yang khas, kepopuleran kopi segera menyebar dari utara ke Yaman pada abad
+            ke-15.
+            Di sana, biji kopi dikenal dengan nama "Mocha". Tak berselang lama, kenikmatan rasa dan aroma kopi mereka
+            sampai ke Mesir, Persia, dan Turki sebagai "Wine of Araby”. Kedai kopi pun mulai dibuka dengan nama
+            "Schools
+            of the Wise". Tanah Arab juga akhirnya menjadi populer karena kopinya. Pada 1560, kopi merambah Eropa dan
+            segera menjadi populer.
+          </p>
+          <p data-aos="flip-up">
+            Sekitar satu abad berselang, Belanda memperkenalkan kopi ke Nusantara. Pada 1696, Belanda membawa benih
+            kopi
+            Arabika untuk ditanam di Pulau Jawa. Sayangnya, benih itu gagal tumbuh karena rusak akibat gempa bumi dan
+            banjir.
+          </p>
+          <p data-aos="flip-up">
+            Barulah 15 tahun kemudian, upaya pemerintah Belanda membuahkan hasil. Kopi Indonesia mulai dilirik dunia.
+            Ketika itu, Bupati Cianjur Aria Wira Tanu mengirimkan sekitar empat kuintal kopi ke Amsterdam. Ekspor kopi
+            tersebut berhasil memecahkan rekor harga saat lelang di sana.
+          </p>
+          <p data-aos="flip-up">
+            Puncaknya, pada 1726, kopi asal Jawa sebanyak 2.145 ton membanjiri Eropa. Kopi Mocha asal Yaman yang kala
+            itu mendominasi pasar akhirnya tersingkir. Momen tersebut menandai puncak keemasan kopi asal Jawa di
+            Eropa,
+            yang sejak itu populer dengan sebutan Java Coffee.
+          </p>
+          <p data-aos="flip-up">
+            Dianggap sebagai komoditas yang menguntungkan, Belanda kemudian memperluas daerah penanaman kopi di
+            Indonesia. Tak hanya itu, mereka juga mengembangkan benih kopi Robusta untuk menyiasati serangan jamur
+            Hemileia vastatrix atau hama karat daun pada 1880. Robusta yang merupakan jenis kopi asal Kongo dipilih
+            karena dianggap lebih kuat dan tahan hama.
+          </p>
+        </article>
+      </div>
+  </section>
+
+  <!-- slider -->
+  <section>
+    <div style="display: flex; flex-direction: row-reverse; background-color: black; flex-wrap: wrap;">
+      <div class="side-container">
+        <div style="position: relative;height: 600px;">
+          <div class="slideshow-container" style="height: 100%; width:100%;">
+            <div class="mySlides fade" style="height: 100%;width: 100%">
+              <div class="numbertext">1 / 5</div>
+              <img src="./img/slide/1.jpg" style="object-fit:cover; width: 100%;height: 100%;">
+            </div>
+            <div class="mySlides fade" style="height: 100%;width: 100%">
+              <div class="numbertext">2 / 5</div>
+              <img src="./img/slide/2.jpg" style="object-fit:cover; width: 100%;height: 100%;">
+            </div>
+            <div class="mySlides fade" style="height: 100%;width: 100%">
+              <div class="numbertext">3 / 5</div>
+              <img src="./img/slide/3.jpg" style="object-fit:cover; width: 100%;height: 100%;">
+            </div>
+            <div class="mySlides fade" style="height: 100%;width: 100%">
+              <div class="numbertext">4 / 5</div>
+              <img src="./img/slide/4.jpg" style="object-fit:cover; width: 100%;height: 100%;">
+            </div>
+            <div class="mySlides fade" style="height: 100%;width: 100%">
+              <div class="numbertext">5 / 5</div>
+              <img src="./img/slide/5.jpg" style="object-fit:cover; width: 100%;height: 100%;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div style="text-align:center; position: absolute; bottom: 10px; width: 100%; ">
+            <span
+              style="color: #FED602; font-size: 14px; background-color: black; padding: 4px;margin-bottom: 10px; display: inline-block;">
+              Foto oleh Septianjar Muharam
+            </span>
+            <div>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-container left-container">
+        <article>
+          <p data-aos="zoom-in">
+            Dalam perkembangannya, kopi Robusta dapat tumbuh dengan baik di Indonesia. Produksinya yang terus
+            meningkat
+            akhirnya menggeser kepopuleran kopi Arabika. Hingga saat ini, Nusantara menjadi salah satu produsen kopi
+            Robusta terbesar di dunia. Harganya yang lebih terjangkau turut mengubah gaya hidup masyarakat dalam
+            menikmati
+            kopi.
+          </p>
+          <p data-aos="zoom-in">
+            Dalam beberapa tahun terakhir, di seluruh dunia, termasuk Indonesia, kopi kian digemari dan menjadi bagian
+            tak
+            terpisahkan dari masyarakat urban. Kedai kopi bermunculan di mana-mana. Di banyak tempat, bahkan posisinya
+            bersebelahan atau berseberangan.
+          </p>
+          <p data-aos="zoom-in">
+            Menyesap kopi sebelum menjalani hari—atau menuntaskan sisa hari saat senja—seakan menjadi ritual wajib.
+            Minuman kaya kafein ini mampu melecut stamina bagi siapa pun yang menyesapnya. Namun kini, pemanfaatan
+            kopi
+            tidak sekadar untuk memenuhi gaya hidup semata, tapi juga pelestarian alam dan meningkatkan perekonomian
+            masyarakat lokal.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- owa article -->
+  <section>
+    <div class="fullpage flex-center">
+      <div class="content-container" style="display: flex;">
+        <div class="balok">
+          <div class='balok-item' style="top: 40vh;"></div>
+        </div>
+        <article style="flex: 1;">
+          <h1 style="font-size: 32px;word-wrap: break-word;">
+            Membudidayakan Kopi Puntang,<br>Menyelamatkan Owa Jawa
+          </h1>
+          <p data-aos="fade-up">
+            Owa jawa (Hylobates moloch) adalah satwa endemik Pulau Jawa yang kini hampir punah. Kera ini memiliki ciri
+            khas tidak memiliki ekor dan warna tubuhnya keabu-abuan. Keberadaannya dapat diketahui dari nyanyiannya
+            yang
+            khas. Saat ini, persebaran Owa jawa hanya terbatas di Jawa bagian barat.
+          </p>
+          <p data-aos="fade-up">
+            Kelangsungan hidup Owa jawa semakin terancam lantaran kian sempitnya habitat alami mereka. Padahal, di
+            alam
+            liar, kera ini memiliki peran penting dalam ekosistem hutan; secara alami, Owa jawa merestorasi hutan
+            dengan
+            menyebarkan benih yang membantu menjaga kesehatan hutan.
+          </p>
+        </article>
+      </div>
+  </section>
+
+
+  <!-- parallax image -->
+  <section>
+    <div class="fullpage">
+      <div class="parallax-image" style="background-image: url(./img/owa-min.jpg);" id='owa'>
+        <div class="caption-image">
+          Owa jawa, satwa endemik Pulau Jawa yang hampir punah.
+        </div>
+      </div>
+      <div class="article-image">
+        <div class="overlay-background" style="opacity: 0.8;">
+        </div>
+        <div class="article-description">
+          <article>
+            <p style="color: white;" data-aos="fade-up">
+              Diperlukan upaya konservasi demi menyelamatkan Owa jawa dari kepunahan, sekaligus menjaga kelestarian
+              hutan.
+              Namun, ada beberapa tantangan yang harus dihadapi. Selain habitat yang semakin sempit, perburuan oleh
+              manusia juga mengancam Owa jawa. Di wilayah Pegunungan Malabar, Jawa Barat, misalnya, upaya konservasi
+              Owa
+              jawa akan lebih sulit lantaran masih maraknya pemburu liar dan perambah hutan. Oleh sebab itu, peran
+              masyarakat di sekitar lokasi konservasi sangat dibutuhkan.
+            </p>
+            <p style="color: white;" data-aos="fade-up">
+              Upaya untuk melibatkan masyarakat dalam pelestarian hutan sebagai habitat Owa jawa telah dilakukan
+              Pertamina
+              EP Asset 3 Subang Field. Caranya, mengajak warga yang tinggal di sekitar Gunung Puntang untuk menanam
+              kopi.
+              Aktivitas yang telah berlangsung sejak 2017 ini merupakan bagian Program CSR Melintang (Masyarakat
+              Peduli
+              Alam Puntang).
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="parallax-image" style="background-image: url(./img/panen-kopi-min.jpg);" id='panen'>
+        <div class="caption-image">
+          Hasil panen kopi Puntang.
+        </div>
+      </div>
+      <div class="article-image">
+        <div class="overlay-background" style="opacity: 0.8;">
+        </div>
+        <div class="article-description">
+          <article>
+            <p style="color: white;" data-aos="fade-up">
+              “Penanaman kopi Puntang merupakan bentuk pemberdayaan masyarakat berbasis konservasi. Selain dapat
+              meningkatkan kesejahteraan masyarakat yang tinggal di sekitar Gunung Puntang, juga dapat menjaga
+              kelestarian hutan dan keberlangsungan kehidupan hewan langka Owa jawa. Jadi, sekali mendayung, dua-tiga
+              pulau terlampaui,” tulis Vice President Corporate Communication Pertamina, Fajriyah Usman, pada laman
+              web resmi Pertamina.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="parallax-image" style="background-image: url(./img/produk_kopi-min.jpg)" id="produk">
+        <div class="caption-image">
+          Produk kopi Puntang yang dikelola LMDH Bukit Amanah.
+        </div>
+      </div>
+
+      <div class="article-image">
+        <div class="overlay-background" style="opacity: 0.8;">
+        </div>
+        <div class="article-description">
+          <article>
+            <p style="color: white;" data-aos="fade-up">
+              Adapun jenis kopi yang ditanam adalah Arabika Priangan atau dikenal juga dengan Sunda Typica. Kopi
+              Puntang
+              merupakan kopi unggulan khas Bandung, Jawa Barat. Kopi ini disukai karena memiliki keunggulan dalam
+              aroma
+              (fragrant), tingkat kemanisan (sweetness) serta rasa (flavor). Dalam pengelolaannya, Pertamina mengajak
+              masyarakat yang tergabung dalam Lembaga Masyarakat Desa Hutan (LMDH) Bukit Amanah. Organisasi ini
+              terbentuk sebagai kelompok budi daya kopi ramah lingkungan yang anggotanya adalah para mantan perambah
+              hutan.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <section>
+        <div class="fullpage flex-center">
+          <div class="content-container">
+            <article>
+              <p style="text-align: center;margin-bottom: 60px;" data-aos="flip-left" data-aos-offset="120">
+                Selain untuk pemanfaatan konservasi hutan dan Owa jawa, kopi juga dapat digunakan untuk mendukung
+                kampanye lingkungan. Seperti yang dilakukan warga Gresik di Kelurahan Sidokumpul, yang meluncurkan
+                inovasi “Bayar Kopi Pakai Sampah” melalui Kedai Kopi Sampah. Di sini, pengunjung dapat menikmati kopi
+                khas Gresik secara cuma-cuma. Syaratnya, pengunjung harus membawa sampah plastik untuk ditukarkan
+                menjadi voucher kopi. <strong>Menarik, bukan?</strong>
+              </p>
+            </article>
+            <div data-aos="fade-left" style="width: 140px;height: 8px; background-color: #FED602;margin: auto;"></div>
+          </div>
+      </section>
+
+
+      <div class="parallax-image" style="background-image: url(./img/bayar_kopi-min.jpeg);" id="bayar">
+        <div class="caption-image">
+          Bayar kopi pakai sampah.
+        </div>
+      </div>
+      <div class="article-image">
+        <div class="overlay-background" style="opacity: 0.8;">
+        </div>
+        <div class="article-description">
+          <article>
+            <p style="color: white;" data-aos="zoom-in-down">
+              Kedai Kopi Sampah merupakan bagian dari komitmen PT Pertamina Lubricant Production Unit Gresik (PUG)
+              dengan Kelurahan Sidokumpul dalam upaya mengurangi sampah plastik. Selain itu, program ini juga
+              bertujuan
+              untuk menyadarkan masyarakat luas akan pentingnya pemanfaatan sampah plastik untuk didaur ulang menjadi
+              barang yang lebih bernilai ekonomis. Hingga saat ini, sudah 897 kilogram sampah yang terkumpul, dan
+              berkontribusi mengurangi sampah di Kelurahan Sidokumpul sebesar 0,22%. Tentu saja, itu bukanlah angka
+              yang
+              fantastis. Namun, mimpi-mimpi besar harus dimulai dengan satu langkah kecil.
+            </p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- mitra umkm -->
+  <section id="mitra">
+    <div class="fullpage flex-center">
+      <div class="content-container" style="display: flex;">
+        <div class="balok">
+          <div class='balok-item'></div>
+        </div>
+        <article style="flex: 1;">
+          <h1 style="font-size: 32px;">
+            Program Kemitraan Kopi untuk UMKM
+          </h1>
+          <p data-aos="flip-up">
+            Indonesia merupakan salah satu negara penghasil kopi terbaik di dunia. Kualitasnya yang unggul dan cita
+            rasanya yang khas, menjadikan biji kopi asal Indonesia disukai penikmat kopi di berbagai negara. Meksiko,
+            misalnya, menjadi salah satu negara tempat kopi Indonesia begitu diminati. Menurut data Kementerian
+            Perdagangan, meskipun Meksiko merupakan salah satu negara penghasil kopi, kopi Indonesia berhasil merebut
+            50
+            persen pangsa pasar kopi impor di Meksiko, disusul Kolombia dengan pangsa pasar rata-rata sebesar 14—16
+            persen per bulan.
+          </p>
+          <p data-aos="flip-up">
+            Peluang tersebut kemudian dimanfaatkan oleh Teuku Dharul Bawadi untuk terjun ke industri kopi. Melalui
+            usaha
+            Bawadi Coffee, ia memasarkan kopi single origin Aceh. Tak hanya soal bisnis, Bawadi Coffee memiliki
+            komitmen
+            untuk membesarkan potensi kopi Aceh dan mengembangkan hasil tani kopi Aceh ke seluruh dunia.
+          </p>
+          <p data-aos="flip-up">
+            Saat awal mula berbisnis, Bawadi hanya bermodalkan Rp30 juta dan bekerja sama dengan lima orang petani
+            kopi
+            Aceh saja. Dengan semangat dan kerja keras, ia akhirnya berhasil memperluas kerja sama dengan koperasi
+            yang
+            memiliki 1.140 orang petani kopi dalam empat tahun. Omzetnya dari usaha kopi melonjak 200 persen sejak ia
+            memulai usaha kecilnya.
+          </p>
+          <p data-aos="flip-up">
+            Tak hanya sukses di Tanah Air, bisnis kopi Bawadi juga sukses menembus pasar internasional. Pemuda 31
+            tahun
+            ini berhasil mengenalkan kopi Aceh hingga ke Malaysia, Singapura, Thailand, Kamboja, dan Eropa.
+            Keberhasilannya ini juga tidak terlepas dari dukungan pinjaman modal usaha Program Kemitraan Pertamina
+            untuk
+            menambah kapasitas produksi Bawadi Coffee.
+          </p>
+          <p data-aos="flip-up">
+            Pada 2018, Bawadi Coffee mendapatkan pinjaman modal usaha sebesar Rp150 juta. Setahun kemudian, Pertamina
+            juga membawa Bawadi Coffee mengikuti pameran di “The 16th China-ASEAN Expo (CAEXPO 2019)” di Nanning
+            International Convention and Exhibition Center, China, dan berhasil mendapat pesanan kopi total senilai
+            Rp1,4 miliar.
+          </p>
+          <p data-aos="flip-up">
+            Upaya Pertamina dalam memanfaatkan kopi untuk mendukung UMKM menjadi energi positif bagi Indonesia. Energi
+            yang memberdayakan masyarakat lokal di bidang ekonomi dan mampu mengembangkan potensi daerahnya sendiri.
+            Bukan hal yang tak mungkin, jika di masa depan UMKM turut menjadi penyangga ekonomi nasional.
+          </p>
+        </article>
+      </div>
+  </section>
+
+  <!-- conclusion -->
+  <section>
+    <div class="fullpage flex-center" style="background-color: black;">
+      <div class="content-container">
+        <article>
+          <h1 style=" font-size: 32px; text-align: center;color: white;" data-aos="zoom-in">
+            Melangkah Menuju Pembangunan Berkelanjutan
+          </h1>
+          <p style="text-align: center;color: white; margin-bottom: 60px;" data-aos="flip-left" data-aos-offset="120">
+            Pandemi ternyata memberi arti, asalkan kita dapat melihat dari sisi yang berbeda. Begitupun halnya dengan
+            program-program tanggung jawab sosial dan lingkungan yang telah dilaksanakan Pertamina, tidak terhenti
+            hanya
+            karena pendemi. Sebagai perusahaan energi nasional, Pertamina turut serta berkontribusi di dalam
+            pencapaian
+            Tujuan Pembangunan Berkelanjutan (Sustainable Development Goals) melalui program-program pemberdayaan
+            masyarakat. Target Sustainable Development Goals dan ISO 26000 menjadi poros prioritas bagi Pertamina
+            dalam
+            mengelola program tanggung jawab sosial dan lingkungan, termasuk di dalamnya pemberdayaan masyarakat,
+            dengan
+            mengedepankan aspek inklusif dan kolaboratif.
+          </p>
+        </article>
+        <div data-aos="fade-left" style="width: 140px;height: 8px; background-color: #FED602;margin: auto;"></div>
+      </div>
+  </section>
+
+
+  <!-- youtube -->
+  <section id="youtube">
+    <div style="position: relative; padding-top: 25; padding-bottom: 56.25%; height: 0;">
+      <iframe title='video' loading="lazy" style="position: absolute; top: 0;left: 0; width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/d6faWQW5aLI?&autoplay=1&mute=1&enablejsapi=1&loop=1" frameBorder="0"
+        allowFullScreen allow="autoplay; encrypted-media"></iframe>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="flex-center" style="flex-direction: column; padding: 40px 0; background-color: black;">
+      <div
+        style="display: flex; justify-content: center;flex-wrap: wrap; width: 100%; max-width: 800px; margin-bottom: 48px;">
+        <div style="margin-bottom: 24px; width: 30%; min-width: 200px;">
+          <h4 style="text-align: center; color: white; margin-bottom: 4px;">Reporter</h4>
+          <p style="text-align: center; color: white;margin: 0; font-size: 14px;">Lastboy Tahara Sinaga</p>
+        </div>
+        <div style="margin-bottom: 24px; width: 30%; min-width: 200px;">
+          <h4 style="text-align: center; color: white; margin-bottom: 4px;">Editor</h4>
+          <p style="text-align: center; color: white;margin: 0; font-size: 14px;">Firman Firdaus</p>
+        </div>
+        <div style="margin-bottom: 24px; width: 30%; min-width: 200px;">
+          <h4 style="text-align: center; color: white; margin-bottom: 4px;">Foto dan Video</h4>
+          <p style="text-align: center; color: white;margin: 0; font-size: 14px;">Dokumentasi Pertamina</p>
+        </div>
+      </div>
+      <div
+        style="display: flex; justify-content: center; width: 100%; max-width: 800px; margin-bottom: 20px;padding: 20px">
+        <div style="margin-bottom: 24px; width: 30%; padding: 0 10px" class="flex-center;">
+          <img src="./img/logo_national_geographic.png" style=" max-height: 42px; width: 100%; object-fit: contain;" />
+        </div>
+        <div style="margin-bottom: 24px;  width: 30%;" class="flex-center">
+          <img src="./img/logo_national_geographic_white.png"
+            style="max-height: 40px; width: 100%; object-fit: contain;" />
+        </div>
+        <div style="margin-bottom: 24px;  width: 30%;" class="flex-center">
+          <img src="./img/logo_pertamina_white.png" style="max-height: 40px; width: 100%; object-fit: contain;" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="js/index.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 2000 });
+  </script>
+
+</html>
